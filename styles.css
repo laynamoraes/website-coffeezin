@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+}
+
+header img {
+  width: 150px;
+  margin-left: 180px;
+}
+
+header nav {
+  position: fixed;
+  top: 30px;
+  right: 180px;
+  vertical-align: text-top;
+}
+
+header nav ul li {
+  display: inline;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #da903b;
+  border-bottom: 4px solid #da903b;
+}
+
+#home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./assets/coffeezin-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 100px;
+}
+
+#home h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 45px;
+  color: #da903b;
+  margin-top: 150px;
+}
+
+#home p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #ffffffd0;
+  width: 52%;
+  margin: 15px 0 40px 0;
+}
+
+#home button {
+  padding: 18px 35px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #da903b;
+  color: #1a1d24;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#home button:hover {
+  scale: 1.02;
+  background-color: #be7d32;
+}
+
+main {
+  width: 100%;
+  background-color: #e4e5eb;
+  padding: 100px 20px 100px 100px;
+}
+
+main aside {
+  display: inline-block;
+  width: 25%;
+}
+
+main aside h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #050304;
+  margin: 15px 0 5px 0;
+}
+
+main aside p {
+  margin-bottom: 15px;
+}
+
+table {
+  border: 1px solid #da903b;
+  border-radius: 5px;
+  padding: 20px 25px;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.18);
+}
+
+table td,
+table th:not(.month) {
+  padding: 5px;
+  text-align: center;
+}
+
+table .events {
+  background-color: #da903b;
+  border-radius: 100%;
+}
+
+main aside ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#products {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+  height: auto;
+  padding-left: 50px;
+}
+
+#products h2,
+#subscriptions h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1a1d24;
+}
+
+#products article {
+  display: inline-block;
+  width: 28%;
+  margin: 20px;
+  padding: 0 0 15px 0;
+  border: 1px solid #1a1d2452;
+  border-radius: 8px;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.18);
+}
+
+#products figcaption {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 10px;
+  text-align: center;
+}
+
+#products article p {
+  margin: 5px 80px 0 80px;
+  padding: 10px;
+  background-color: #da903b;
+  color: #1a1d24;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 50px;
+}
+
+#products img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+#about {
+  width: 100%;
+  background-color: #243443;
+  padding: 100px;
+}
+
+#about article {
+  width: 70%;
+  margin: auto;
+}
+
+#about h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #da903b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #da903b;
+  margin: 30px 0;
+}
+
+#about p,
+#about li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #ffffffd0;
+  text-align: justify;
+}
+
+#about li {
+  padding-bottom: 15px;
+  margin-left: 20px;
+}
+
+#subscriptions {
+  width: 100%;
+  background-image: url(./assets/espaco-bg-small.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0;
+}
+
+#subscriptions form {
+  width: 40%;
+  margin: auto;
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 50px 40px;
+  border-radius: 8px;
+}
+
+#subscriptions h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#subscriptions p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#subscriptions p,
+#subscriptions label {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #1a1d24;
+}
+
+#subscriptions label {
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+}
+
+#subscriptions label input {
+  width: 85%;
+  height: 32px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#subscriptions div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#subscriptions form button {
+  width: 100%;
+  padding: 12px 35px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #da903b;
+  color: #1a1d24;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#subscriptions form button:hover {
+  scale: 1.02;
+  background-color: #be7d32;
+}
+
+footer {
+  width: 100%;
+  background-color: #da903b;
+  padding: 24px 100px;
+}
+
+#logo-footer {
+  display: inline-block;
+  width: 22%;
+  vertical-align: top;
+}
+
+#logo-footer img {
+  width: 180px;
+}
+
+#links-footer {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+#contatos-footer {
+  display: inline-block;
+  width: 32%;
+  vertical-align: top;
+}
+
+#links-footer h3,
+#contatos-footer h3,
+#localizacao-footer h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a1d24;
+}
+
+#links-footer ul,
+#contatos-footer ul {
+  list-style: none;
+}
+
+#links-footer ul a {
+  text-decoration: none;
+}
+
+#links-footer ul li a,
+#contatos-footer ul li,
+#logo-footer p {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1d24ee;
+}
+
+#links-footer ul li a:hover {
+  color: #1a1d24da;
+}
+
+#localizacao-footer {
+  display: inline-block;
+  width: 25%;
+  /* margin-left: 70px; */
+}
+
+#localizacao-footer img {
+  width: 250px;
+}
